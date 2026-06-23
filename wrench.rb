@@ -5,15 +5,15 @@
 class Wrench < Formula
   desc "An educational project designed to explore different types of processor architectures."
   homepage "https://github.com/scobca/wrench"
-  url "https://github.com/scobca/wrench/archive/refs/tags/0.0.4.7.13.tar.gz"
-  sha256 "738765d0f3d969d03c4546c4ae36bc37cd11282914102182351f9c53d0a262d1"
+  url "https://github.com/scobca/wrench/archive/refs/tags/0.0.4.7.14.tar.gz"
+  sha256 "332416c69d864eac8e373fa2f3d8f4a1dfcc67fac3738d682add24a2ae3f6b6f"
   license "BSD-3-Clause"
 
   bottle do
-    root_url "https://github.com/scobca/wrench/releases/download/0.0.4.7.13"
-    sha256 "8c221266f4399916d502ff52bc669b2301fd5697d09c4966fe241bd64c238ee1" => :arm64_linux
-    sha256 "84305e160382f5789e29a33ff0108b1edcad10203c6d3afac8e09d372122d08b" => :x86_64_linux
-    sha256 "0fb3e507dbf60873c3abb15c7c555aa12b9863fe657c0741f7ca7bdb37927737" => :arm64_ventura
+    root_url "https://github.com/scobca/wrench/releases/download/0.0.4.7.14"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "ae40fd4f013fddf57703b70889a9f1ae51beb481d35304adf2224e7f767a3192"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "68daa451f9b7d8435964cbc982fa36600fcbfc9139a8e3fcafffb09c960f166b"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "64be6298e0903619bbbd9fc7c7873534a14d0becd852394042345f50a285db2c"
   end
 
   depends_on "ghc" => :build
